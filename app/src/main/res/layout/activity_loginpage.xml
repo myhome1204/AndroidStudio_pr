@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Loginpage">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/id"
+            android:textColorHint="#070707"
+            android:layout_width="356dp"
+            android:background="@drawable/id_box"
+            android:layout_height="62dp"
+            android:paddingLeft="27dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="true"
+            android:hint="아이디"/>
+        <EditText
+            android:id="@+id/password"
+            android:background="@drawable/id_box"
+            android:layout_width="356dp"
+            android:layout_height="62dp"
+            android:paddingLeft="27dp"
+            android:textColorHint="#070707"
+            android:enabled="true"
+            android:hint="비밀번호"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/signup"
+        android:layout_marginTop="43dp"
+        android:textColor="#1868e8"
+        android:textStyle="bold"
+        android:text="가입하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="162dp"
+        android:layout_height="58dp"
+        android:background="@drawable/login_back"
+        android:text="로그인"
+        android:gravity="center"
+        android:textSize= "20dp"
+        android:textColor="@color/white"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
