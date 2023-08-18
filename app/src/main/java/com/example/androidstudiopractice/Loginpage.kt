@@ -39,12 +39,14 @@ class Loginpage : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+        //아래에 코드는 EditText박스에서 사용자가 입력하는값을 실시간으로 받는 코드이다 (doAfterTextChanged)
         findViewById<EditText>(R.id.id).doAfterTextChanged {
             username = it.toString()
         }
         findViewById<EditText>(R.id.password).doAfterTextChanged {
             password = it.toString()
         }
+        //로그인TextView가 눌리면 입력받은 비밀번호를 Hash함수로 바꿔주고 넣어준다
         findViewById<TextView>(R.id.login).setOnClickListener {
             val hashpassword = hashPassword(password)
             retrofitService.checkLogin(username,hashpassword).enqueue(object :
